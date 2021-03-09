@@ -32,8 +32,6 @@ categories: Android
 
 # 선언형 프로그래밍의 예시
 
-이미 이전에 iOS에서 나왔던 SwiftUI가 선언형 프레임워크 입니다.
-
 안드로이드를 기준으로 설명 드리자면 [DataBinding](https://developer.android.com/topic/libraries/data-binding)이 일종의 선언형 프로그램입니다. 
 
 기존 방식을 보면 xml에서 정의한 뷰를 java/kotlin 코드에서 가져오기 위해서 findViewById 같은걸 해서 가져오고, 연산을 하고 뷰를 변화 시켰었습니다.
