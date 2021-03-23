@@ -8,7 +8,7 @@ categories: Android
 
 # Android 12의 RenderEffect 사용해보기
 
-<img src="./attach/2021-03-23-rendereffect/1.png?raw=true" alt="1" style="zoom:50%;" />
+<img src="https://github.com/kimsh3933/kimsh3933.github.io/blob/master/_posts/attach/2021-03-23-rendereffect/1.png" alt="1" style="zoom:50%;" />
 
 Android Preview 12에 있는 RenderEffect 중 BlurEffect를 적용한 결과 입니다.
 
