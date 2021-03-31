@@ -71,7 +71,9 @@ fun DefaultPreview() {
 }
 ```
 
-미리보기가 보이지 않으면  ![bcf00530a220eea9.png](https://developer.android.com/codelabs/jetpack-compose-basics/img/bcf00530a220eea9.png) (code)가 아닌  ![aadde7eea0921d0f.png](https://developer.android.com/codelabs/jetpack-compose-basics/img/aadde7eea0921d0f.png) (split)을 클릭하면 됩니다.
+Preview annotation에 name값을 지정해 주어야 Preview를 볼 수 있습니다.
+미리보기가 보이지 않으면  ![bcf00530a220eea9.png](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-03-29-composebasic/code.png) (code)가 아닌  ![aadde7eea0921d0f.png](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-03-29-composebasic/split.png) (split)을 클릭하면 됩니다.
+
 
 Preview코드 작성 후 preview화면에서 Build&Refresh를 클릭하여 빌드 합니다. value가 바뀔때는 실시간으로 반영되지만 UI 속성이 바뀔 때에는 새로 빌드가 필요합니다.
 
