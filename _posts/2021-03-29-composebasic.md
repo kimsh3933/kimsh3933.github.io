@@ -57,6 +57,17 @@ class MainActivity : AppCompatActivity() {
 
 여기서 BasicCodelabTheme는 Composable function의 스타일을 지정하는 방법입니다. 텍스트가 화면에 어떻게 표시되는지 확인 하려면 에뮬레이터 또는 기기에서 앱을 실행하거나 Android Studio 미리보기에서 볼 수 있습니다.
 
+setContent는 activity의 view를 생성하는 부분입니다. setContent 는 content라는 function을 parameter로 받고 있습니다. @Composable은 다른 @Composable에서만 호출이 가능합니다.([Composable](https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable#) functions can only ever be called from within another [Composable](https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable#) function.) [참고](https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable) 
+
+그렇기 때문에 @Composable인 content를 parameter로 받는 setContent 와 연결되어야지만 Composable들을 실행시킬 수 있습니다.
+
+```kotlin
+public fun ComponentActivity.setContent(
+    parent: CompositionContext? = null,
+    content: @Composable () -> Unit
+)
+```
+
 
 
 Android Studio의 미리보기를 사용하려면 `@Preview` annotation을 사용하여 parameter가 없는 함수 혹은 기본 파라미터가 있는 함수를 @Preview 와 함께 사용하여 프로젝트를 빌드 합니다. 동일한 파일에 여러개의 preview를 포함하고 이름을 지정할 수 있습니다. Preview 함수는 실제 실행되는 앱과는 별도로 동작 됩니다. 기존 xml에서 tools와 기능이 유사합니다.
@@ -233,7 +244,7 @@ fun MyScreenContent(names: List<String> = listOf("Android", "there")) {
 
 mutableStateOf 라는 Composable한 가변 메모리를 제공하는 함수를 사용하여 내부 상태를 추가합니다.
 
-remember을 활용하여 현재 상태를 기억하게 합니다. 그리고 해당 값을 사용할 때 자동으로 observe됩니다. 만약 count값이 변경이 생기면 해당 범위가 한번 더 호출되는 식 입니다.
+remember을 활용하여 현재 상태를 기억하게 합니다. 그리고 해당 값을 사용할 때 자동으로 observe됩니다. 만약 count값이 변경이 생기면 해당 범위가 한번 더 호출되는 식 입니다. 값이 observe 되어 한번 더 호출되는 범위는 해당 state의 value를 호출한 Composable 함수 입니다. 최소로만 재구성을 하게 하려면 state의 value보다는 state를 다른 composable함수로 넘겨서 최종적으로 처리하는 곳에서 value를 쓰도록 하면 됩니다. 
 
 ```kotlin
 @Composable
@@ -242,6 +253,7 @@ fun Counter() {
     val count = remember { mutableStateOf(0) }
 
     Button(onClick = { count.value++ }) {
+				// 여기는 @Composable한 RowScope라 Counter 함수 전체가 호출되지 않고 이 부분만 다시 호출 됩니다. 
         Text("I've been clicked ${count.value} times")
     }
 }
@@ -260,6 +272,8 @@ fun MyScreenContent(names: List<String> = listOf("Android", "there")) {
     }
 }
 ```
+
+
 
 
 
