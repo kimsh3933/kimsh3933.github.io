@@ -503,3 +503,24 @@ Compose는 최신 도구 키트이며 웨어러블을 비롯한 소형 폼팩터
 
 [여기서 설명드린 Compose는 CodeLab를 통해 체험할 수 있습니다.](https://developer.android.com/courses/pathways/compose)
 
+## 추가 : [Q&A 세선 졍리](https://www.youtube.com/watch?v=0MiW-qb0GhQ)
+1. Jetpack Compose가 여름에 출시된다면, Compose로 새로운 앱들을 시작하는 것을 추천하나요?
+- 물론입니다. 지금은 beta이지만 가능합니다. 사용해 주세요.
+2. 1.0에서는 퍼포먼스가 더 잘나오겠죠? 아직 XML보다 느린거 같아요.
+- API는 beta에서 stable합니다. 하지만 퍼포먼스는 현재 신경쓰는 중 입니다. 퍼포먼스는 1.0이후로 지속적으로 향상될 것입니다.
+3. Compose는 Wear OS를 지원하나요?
+- Wear Os에서도 돌아갑니다. Compose는 결국 어디에서나 사용되게 될 것입니다.
+4. Android Studio는 XML 레이아웃과 constraint를 위한 에디터가 있는데요, Compose는 어떤가요?
+- 현재로서는 계획되어 있지 않습니다. Compose라면 코드를 작성하기만 하면 됩니다. Row, Column을 Compose가 가능한 곳에 사용해 보세요.
+5. XML은 deprecated되나요?
+- 당장은 아니겠지만, 우리가 할 수 있을때 치워버릴 겁니다.
+6. LazyColumn vs RecyclerView
+- 매우 유사한 개념입니다. LazyColumn은 RecyclerView에서 영감을 받았습니다. 매우 다른 API로 LazyList에 중점을 둔 사용 용이성을 가집니다. Compose에서 잘 작동 하도록 계속 반복 합니다.
+7. Compose 테스트를 에뮬레이터 없이 단위 테스트로 실행할 계획이 있나요?
+- 조사하고 있습니다.
+8. Compose는 특정한 코틀린 버전에 의존하는데요, 이로 인해 이전 버전의 Kotlin에서 Android 프로젝트를 유지할 수 있을까요?
+- 컴파일러는 Kotlin 1.5에서 시작하는 것이 더 안정적일 것입니다. 버전 요구 사항은 이후에는 완화될 것입니다.
+9. 우리는 항상 최신의 Compose 기능을 사용하기 위해 Canary버전을 사용해야 하나요?
+- 이제는 Beta에서 Compose를 사용할 수 있습니다.
+10. MaterialTheme를 확장하여 나만의 맞춤형 디자인 시스템을 지원하려면 어떻게 해야 하나요?
+- MaterialTheme를 자신의 것으로 래핑할 수 있습니다. MaterialTheme의 작동 방식과 유사하게 처음 부터 새로 만들 수 있습니다.
