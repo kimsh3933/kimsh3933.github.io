@@ -21,7 +21,7 @@ Compose는 직관적이고 강력하면서도 처음부터 개발을 가속화 �
 
 # 왜 Compose가 나왔을까
 
-![001](./attach/2021-06-20-googleiocompose/001.png)
+![001](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/001.png)
 
 뷰 기반의 기존 툴킷은 10년 넘게 사용되어 왔습니다. 기대 성능이 향상되었고 앱에 대한 기대는 커지고 있습니다. 그렇지만 View 기술 자체는 10년이나 된 기술이라 새로운 UI 도구를 원한다는 생각이 많았습니다. (좋아지긴 해도 근본은 10년전하고 똑같다)
 
@@ -35,7 +35,7 @@ Jetpack은 선언적(Declarative) UI도구키트(UI Toolkit) 입니다.
 
 ## 선언적 Declarative
 
-![002](./attach/2021-06-20-googleiocompose/002.png)
+![002](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/002.png)
 
 원래는 View를 사용하려면 XML에 UI를 선언해야 했습니다.
 
@@ -201,7 +201,7 @@ fun MessageList(
 
 ### 선언적 UI의 핵심
 
-![003](./attach/2021-06-20-googleiocompose/003.png)
+![003](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/003.png)
 
 선언적 UI의 핵심은 특정 상태에서 UI의 형태를 완전히 설명하고, 상태가 바뀌면 프레임워크에서 UI 업데이트를 처리합니다.
 
@@ -254,7 +254,7 @@ MaterialTheme(
 
 
 
-![004](./attach/2021-06-20-googleiocompose/004.png)
+![004](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/004.png)
 
 Compose는 간단하지만 강력한 새로운 레이아웃 시스템을 제공합니다.
 
@@ -262,19 +262,19 @@ Compose는 간단하지만 강력한 새로운 레이아웃 시스템을 제공�
 
 View시스템과는 달리 Compose레이아웃 모델은 여러 척도들을 전달할 수 없어서 중첩된 레이아웃에 적합합니다.
 
-![005](./attach/2021-06-20-googleiocompose/005.png)
+![005](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/005.png)
 
 새로운 Compose DSL(Domain-Specific Languages)을 적용한 ConstraintLayout을 사용하면 더 복잡한 레이아웃을 표현할 수 있지만, 맞춤형 레이아웃도 훨씬 간단하게 구현합니다.
 
-![006](./attach/2021-06-20-googleiocompose/006.png)
+![006](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/006.png)
 
 척도와 배치를 직접 설정해서 적절한 레이아웃을 만들고 싶다면 함수를 구현하기만 하면 됩니다.
 
-![007](./attach/2021-06-20-googleiocompose/007.png)
+![007](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/007.png)
 
 가장 기대가 큰건 새로운 애니메이션 시스템 입니다. 훨씬 간단하게 사용할 수 있고, 보다 효과적이고 간단하게 적용할 수 있습니다. Compose에 MotionLayout을 가져오는 작업도 진행되고 있습니다. [CodeLab에서 확인하기](https://developer.android.com/codelabs/jetpack-compose-animation). 
 
-![008](./attach/2021-06-20-googleiocompose/008.png)
+![008](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/008.png)
 
 Compose에서는 테스트 기능을 극대화 하는 전용 테스트 기능을 제공합니다. 그리고 독립적으로 컴포저블을 테스트 하는 간편한 API를 제공합니다. 애니메이션을 테스트 할 때에도 테스트를 완전히 통제할 수 있습니다. [CodeLab에서 확인하기](https://developer.android.com/codelabs/jetpack-compose-testing)
 
@@ -282,11 +282,11 @@ Compose에서는 테스트 기능을 극대화 하는 전용 테스트 기능을
 
 ## Compose is entirely written in Kotlin
 
-![009](./attach/2021-06-20-googleiocompose/009.png)
+![009](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/009.png)
 
 Compose는 Kotlin으로만 개발 되었고, 우수한 언어기능을 활용해 강력하고 간결하면서도 직관적인 API를 구축할 수 있습니다.
 
-![010](./attach/2021-06-20-googleiocompose/010.png)
+![010](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/010.png)
 
 코루틴을 사용하면 간단한 비동기식 API를 작성할 수 있습니다. 제스처를 애니메이션으로 핸드오프 하는 것 처럼 비동기식으로 결합칸 코드를 간단하게 작성할 수 있습니다.  
 
@@ -422,7 +422,7 @@ Compose에서는 앱이 다크모드에도 반응하도록 테마를 설정할 �
 
 Jetpack Compose는 기존 View 시스템과 호환 됩니다. [Codelab에서 확인하기](https://developer.android.com/codelabs/jetpack-compose-migration)
 
-![스크린샷 2021-06-20 오후 8.09.58](./attach/2021-06-20-googleiocompose/011.png)
+![011](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/011.png)
 
 화면의 작은 요소 부터 시작해서 UI의 큰 부분이나 화면 전체를 교체 하면 됩니다. Compose는 필요한 단계를 진행할 수 있도록 도와 줍니다.
 
@@ -485,7 +485,7 @@ View와의 상호 운용성 외에도 Navigation, ViewModel, LiveData, Rx, Flow,
 
 개발자의 환경은 강력한 도구와 종합적 문서가 없으면 완전하다고 할 수 없습니다. 그래서 Layout Inspecter 과 같은 친숙한 도구를 Compose를 지원하도록 업데이트 했을 뿐만 아니라 새 도구도 구현 하였습니다.
 
-![012](./attach/2021-06-20-googleiocompose/012.png)예를 들면 Compose Preview에서는 구성요소와 함께 미리보기를 정의할 수 있습니다. 별도의 `@Preview` Compose를 활용하면 독립적으로 반복 개선하고 애니메이션을 구현할 수 있습니다. 
+![012](https://raw.githubusercontent.com/kimsh3933/kimsh3933.github.io/master/_posts/attach/2021-06-20-googleiocompose/012.png)예를 들면 Compose Preview에서는 구성요소와 함께 미리보기를 정의할 수 있습니다. 별도의 `@Preview` Compose를 활용하면 독립적으로 반복 개선하고 애니메이션을 구현할 수 있습니다. 
 
 다른 지원도구는 [What's new in Android Development Tools](https://www.youtube.com/watch?v=WRNWzhrl6-s), [What's new in Design Tools](https://www.youtube.com/watch?v=B1u7JZ1rLyE) 에서 확인할 수 있습니다.
 
