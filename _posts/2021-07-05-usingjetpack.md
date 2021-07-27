@@ -540,3 +540,5 @@ NavHost(navController, startDestination = "home") {
 HomeScreen을 StateLess로 만든 덕분에 사용자가 식물을 탭할 때 작동되는 Lambda를 이미 노출했습니다. 그런 다음 HomeScreen 목적지가 PlantDetailScreen의 경로로 navigate()를 호출하고 ID를 입력하여 해당 Lambda를 구한합니다. NavController이 나머지 부분을 처리하여 HomeScreen의 상태를 저장하고 PlantDetailScreen으로 교체합니다.
 
 시스템 뒤로 버튼을 누르면 자동으로 사용자가 종료한 상태와 동일한 HomeScreen으로 돌아갑니다. Jetpack Compose로 수행할 수 있는 작업 및 기타 JetPack 라이브러리와 통합 하는 부분을 간단하게 살펴 보았습니다.
+
+참고하기 : https://developer.android.com/jetpack/compose/navigation?hl=ko
